@@ -1,0 +1,7 @@
+<main>
+    <div class="pokemon-grid">
+        <ng-container *ngFor="let pokemon of pokemons">
+            <app-pokemon-card [pokemon]="pokemon"></app-pokemon-card>
+        </ng-container>
+    </div>
+</main>
