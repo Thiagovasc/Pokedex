@@ -1,4 +1,12 @@
 <div class="pokemon-card">
-    <img [src]="spritesUrl" alt="" srcset="">
-    <h2>{{pokemon.name}}</h2>
+    <p>
+        #{{id}}
+    </p>
+    <div class="ref">
+        <img [src]="spritesUrl" alt="" srcset="">
+        <h2>{{pokemon.name}}</h2>
+        <div class="types-container">
+            <p *ngFor="let type of pktypes" [ngStyle]="{'background-color': getTypeColor(type)}">{{type}}</p>
+        </div>
+    </div>
 </div>
